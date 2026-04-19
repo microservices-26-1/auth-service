@@ -6,9 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import store.account.AccountController;
-import store.account.AccountIn;
-import store.account.AccountOut;
+import product_store.account.*;
+
 
 @Service
 public class AuthService {

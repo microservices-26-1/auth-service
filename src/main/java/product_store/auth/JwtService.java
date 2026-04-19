@@ -15,7 +15,7 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.JwtParser;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
-import store.account.AccountOut;
+import product_store.account.AccountOut;
 
 @Service
 public class JwtService {

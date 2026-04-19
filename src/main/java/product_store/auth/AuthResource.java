@@ -11,7 +11,8 @@ import org.springframework.http.ResponseCookie;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 
-import store.account.AccountOut;
+import product_store.account.AccountOut;
+import product_store.auth.LogIn;;
 
 @RestController
 public class AuthResource implements AuthController {
@@ -22,7 +23,7 @@ public class AuthResource implements AuthController {
     private AuthService authService;
 
     @Override
-    public ResponseEntity<Void> login(LoginIn in) {
+    public ResponseEntity<Void> login(LogIn in) {
         final TokenOut out = authService.login(in.email(), in.password());
         return ResponseEntity
             .ok()

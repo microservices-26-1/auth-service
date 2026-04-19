@@ -1,0 +1,4 @@
+product_store\auth\AuthApplication.class
+product_store\auth\AuthService.class
+product_store\auth\AuthResource.class
+product_store\auth\JwtService.class

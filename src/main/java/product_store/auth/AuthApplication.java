@@ -6,7 +6,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableFeignClients(basePackages = {
-	"store.account"
+	"product_store.account"
 })
 public class AuthApplication {
 
