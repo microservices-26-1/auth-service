@@ -12,7 +12,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RestController;
 
 import product_store.account.AccountOut;
-import product_store.auth.LogIn;;
 
 @RestController
 public class AuthResource implements AuthController {
