@@ -8,6 +8,7 @@ pipeline {
         stage('Dependecies') {
             steps {
                 build job: 'account', wait: true
+                build job: 'auth', wait: true
             }
         }
         stage('Build') { 
