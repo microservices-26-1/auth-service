@@ -3,7 +3,9 @@ kind: Secret
 metadata:
   name: auth-secret
 type: Opaque
-
+stringData:
+  JWT_SECRET_KEY: secret
+  JWT_HTTP_ONLY: "true"
 
 ---
 apiVersion: v1
@@ -43,7 +45,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: auth-service
+  name: auth
 spec:
   selector:
     app: auth
