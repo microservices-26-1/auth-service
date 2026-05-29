@@ -10,7 +10,7 @@ store:
     secretKey: ${JWT_SECRET_KEY}
     duration: 86400000 
     httpOnly: ${JWT_HTTP_ONLY}
-    
+
 management:
   endpoints:
     web:
